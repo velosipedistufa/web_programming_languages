@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Lab_shop</title>
+    <style>
+	table tr td{
+		border: 1px solid #cccccc;
+	}
+        .selected {
+		background-color: cyan;
+        }
+        .selected_del {
+		background-color: red;
+        }
+    </style>
+</head>
+<body>
+list
+                <table id="menu_table">
+                    <tr>
+                        <th>Name</th>
+                        <th>Price</th>
+                    </tr>
+                    <tr>
+                        <td>Useless row</td>
+                        <td>100</td>
+                    </tr>
+                </table>
+		<label for="name_input">Name</label>
+		<input type="text" id="name_input">
+		<label for="price_input">Price</label>
+                <input type="text" id="price_input">
+		<input type="submit" value="Add" id="submit_button">
+<div>shopping cart</div>
+                <table id="main_table">
+                    <tr>
+                        <th>Name</th>
+                        <th>Price</th>
+                    </tr>
+                    <tr id="resulting_price_row">
+                        <td>Final</td>
+                        <td id="resulting_price_column">0</td>
+                    </tr>
+                </table>
+<script src="main.js"></script>
+</body>
+</html>
