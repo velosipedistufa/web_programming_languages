@@ -1,8 +1,6 @@
 function enableRowSelectable(row, className) {
     row.addEventListener('mouseover', (event) => {
 	let el = event.target.parentElement.children[1];
-//	let elementalya = document.getElementsByClassName('resulting_price_column')
-//	elementalya.classList.add(className);
         el.classList.add(className);
     });
 
@@ -29,7 +27,6 @@ function addRow(name, price) {
     let table = document.getElementById("main_table");
 
     let row = document.createElement('tr');
-//	let elementaly = document.createElement('td');
 
     enableRowSelectable(row, 'selected_del');
 
