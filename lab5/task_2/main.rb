@@ -5,5 +5,4 @@ def processing(row)
 	arr.pop
 	arr = arr.sort_by { |str| -str[0] }
 	arr = arr.reverse()
-	puts arr
 end

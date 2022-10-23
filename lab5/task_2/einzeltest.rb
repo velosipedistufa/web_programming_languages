@@ -4,12 +4,12 @@ require_relative 'main'
 # tests calc method
 class TestProcessing < Minitest::Test
 	def test1
-		checkable = processing(1)
-		assert_in_delta(checkable, -1.34775597054392577, 1e-17)
+		checkable = processing([1, 2, 3, 3, 2, 2, 1, 4, 5, 3, 4, 5, 6])
+		assert(checkable, [3456, 22, 145, 1233])
 	end
 
 	def test0
-		checkable = processing(0)
-		assert_in_delta(checkable, -11.4300523027613431, 1e-17)
+		checkable = processing([1, 2, 3, 6, 7, 3, 4, 5, 2, 3, 3, 4])
+		assert(checkable, [345, 2334, 12367])
 	end
 end

@@ -1,5 +1,3 @@
-require_relative 'processor'
-
 def processing(row)
 	arr = row.delete(' ').split('')
 	puts arr.uniq.
@@ -7,13 +5,4 @@ def processing(row)
 		select { | c, _ | c > 0 }.
 		sort.reverse.
 		map { | c, e | "#{e}:#{c}" }
-end
-
-def arr_bearbeiter(arr)
-	arr = arr.sort_by { |str| -str.length() }
-	arr = arr.reverse()
-	arr.each do |x|
-		puts x
-		puts processing(x)
-	end
 end
