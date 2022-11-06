@@ -1,7 +1,10 @@
+# frozen_string_literal: true
+
 require_relative 'main'
 
 puts 'Enter x'
 
-numbre = gets.to_i
+numbre = gets.to_f
 
 puts Processor.sin(numbre)
+puts Processor.counter

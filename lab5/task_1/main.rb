@@ -1,3 +1,5 @@
-def processing(x)
-  x = (Math.exp(x) / Math.tan(x ** 3 - 5)) + x ** 2
+# frozen_string_literal: true
+
+def processing(val)
+  (Math.exp(val) / Math.tan(val**3 - 5)) + val**2
 end

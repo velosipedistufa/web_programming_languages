@@ -1,15 +1,16 @@
+# frozen_string_literal: true
+
 require 'minitest/autorun'
 require_relative 'main'
-
-# tests calc method
+# comments
 class TestProcessing < Minitest::Test
-	def test1
-		checkable = processing(10e-4)
-		assert_equal(checkable, 7)
-	end
+  def test_proverka1
+    checkable = processing(1e-3)
+    assert(checkable == "0.14113062718531458\n7")
+  end
 
-	def test0
-		checkable = processing(10e-5)
-		assert(checkable == 8)
-	end
+  def test_proverka0
+    checkable = processing(1e-4)
+    assert(checkable == "0.14111965434119442\n8")
+  end
 end

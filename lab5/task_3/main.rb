@@ -1,8 +1,7 @@
-require_relative 'processor'
 
 def processing(row)
 	arr = row.delete(' ').split('')
-	puts arr.uniq.
+	arr.uniq.
 		map { | e | [arr.count(e), e] }.
 		select { | c, _ | c > 0 }.
 		sort.reverse.

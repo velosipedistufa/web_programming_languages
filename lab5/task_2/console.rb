@@ -1,10 +1,12 @@
+# frozen_string_literal: true
+
 require_relative 'main'
 
 puts 'Enter x'
 
-numbre = gets.to_s
+numbre = gets.split.map(&:to_i)
 if numbre.empty?
-	puts "invalid input"
+  puts 'invalid input'
 else
-	puts processing(numbre)
+  processing(numbre).each { |arr| p arr }
 end

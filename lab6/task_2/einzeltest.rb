@@ -1,15 +1,20 @@
+# frozen_string_literal: true
+
 require 'minitest/autorun'
 require_relative 'main'
-
-# tests calc method
+# commets
 class TestProcessing < Minitest::Test
-	def test1
-		checkable = processing(10e-4)
-		assert_equal(checkable, 7)
-	end
+  def test_proverka1
+    checkable = Processor.sin(1e-3)
+    assert_in_delta(checkable, 0.145312, 1e-1)
+    num_iter = Processor.counter
+    assert(num_iter == 7)
+  end
 
-	def test0
-		checkable = processing(10e-5)
-		assert(checkable == 8)
-	end
+  def test_proverka0
+    checkable = Processor.sin(1e-4)
+    assert_in_delta(checkable, 0.140874, 1e-1)
+    num_iter = Processor.counter
+    assert(num_iter == 8)
+  end
 end
