@@ -1,5 +1,7 @@
 # frozen_string_literal: true
 
+# rubocop:disable Metrics/AbcSize
+# rubocop:disable Metrics/MethodLength
 def processing(arr)
   result = []
   temp = []
@@ -14,3 +16,5 @@ def processing(arr)
   end
   (result.sort_by { |str| -str[0] })
 end
+# rubocop:enable Metrics/AbcSize
+# rubocop:enable Metrics/MethodLength

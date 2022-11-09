@@ -1,5 +1,6 @@
 # frozen_string_literal: true
 
+# doc
 class Word
   attr_accessor :value
 
@@ -20,6 +21,7 @@ class Word
   end
 end
 
+# doc
 class SubWord < Word
   attr_accessor :val_length
 
@@ -29,7 +31,7 @@ class SubWord < Word
   end
 
   def vowel_counter
-    counter = value.chars.map { |x| x if x.match(/[aeiouAEIOU]/) }.join.size
+    value.chars.map { |x| x if x.match(/[aeiouAEIOU]/) }.join.size
   end
 
   def field_output
@@ -47,6 +49,7 @@ def work_classes(wort)
   sup_elem.len_output
   puts 'Sub Class'
   sub_elem.field_output
+  sub_elem
 end
 
 # elem = Word.new('Hi')

@@ -1,5 +1,14 @@
 # frozen_string_literal: true
 
+def abortion(new_arr)
+  if new_arr.empty?
+    puts 'NO WORDS'
+    abort
+  else
+    new_arr
+  end
+end
+
 def finding_word(filename)
   new_arr = []
   File.open(filename.to_s, 'r') do |file|
@@ -8,12 +17,7 @@ def finding_word(filename)
       new_arr << word.delete('^[А-Яа-я]') if word[0] == 'а'
     end
   end
-  if new_arr.empty?
-    puts "NO WORDS"
-    abort
-  else
-    new_arr
-  end
+  abortion(new_arr)
 end
 
 def sorting_length(anarr)
