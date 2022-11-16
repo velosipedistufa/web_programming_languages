@@ -8,8 +8,8 @@ class Word
     @value = value
   end
 
-  def val_length
-    puts value.length
+  def value_length
+    value.length
   end
 
   def field_output
@@ -17,7 +17,7 @@ class Word
   end
 
   def len_output
-    puts val_length
+    puts value_length
   end
 end
 

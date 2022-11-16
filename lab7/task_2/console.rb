@@ -1,9 +1,8 @@
 # frozen_string_literal: true
 
-require_relative 'main1'
+require_relative 'main'
 
 puts 'Enter word'
 
 word_name = gets.to_s.strip
-puts "\n"
-puts work_classes(word_name)
+work_classes(word_name)

@@ -8,6 +8,7 @@ class Word
   end
   def field_output
     puts value
+    value
   end
 end
 
