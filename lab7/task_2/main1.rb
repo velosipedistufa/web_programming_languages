@@ -1,26 +1,36 @@
+# frozen_string_literal: true
+
+# com
 class Word
   attr_accessor :value
+
   def initialize(value)
     @value = value
   end
+
   def val_length
-    puts value.length()
+    puts value.length
   end
+
   def field_output
     puts value
     value
   end
 end
 
+# com
 class SubWord < Word
   attr_accessor :val_length
+
   def initialize(value)
     super(value)
     @val_length = value.length
   end
+
   def vowel_counter
-    counter = value.chars.map{|x| x if x.match(/[aeiouAEIOU]/)}.join.size
+    value.chars.map { |x| x if x.match(/[aeiouAEIOU]/) }.join.size
   end
+
   def field_output
     super(value)
     puts val_length
