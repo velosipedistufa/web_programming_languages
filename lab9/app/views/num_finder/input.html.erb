@@ -1,0 +1,7 @@
+<h3>You are now viewing page, that is located in app/views</h3>
+<%= form_tag("/num_finder/output.json", :method => "get", remote:true, id:'num_finder_table') do %>
+  <%= label_tag("Enter the number for convertation:") %>
+  <%= number_field_tag(:ch, nil, min: 0, step: 1)%> <br/>
+  <%= submit_tag("Convert") %>
+<% end %>
+<div id="result"></div>
