@@ -1819,3 +1819,18 @@ Processing by NumFinderController#output as JSON
 Completed 200 OK in 2ms (Views: 0.5ms | ActiveRecord: 0.0ms | Allocations: 306)
 
 
+Started GET "/num_finder/input" for 127.0.0.1 at 2022-12-10 01:08:17 +0300
+Processing by NumFinderController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering num_finder/input.html.erb within layouts/application
+  Rendered num_finder/input.html.erb within layouts/application (Duration: 1.6ms | Allocations: 775)
+  Rendered layout layouts/application.html.erb (Duration: 108.5ms | Allocations: 39238)
+Completed 200 OK in 116ms (Views: 111.2ms | ActiveRecord: 0.0ms | Allocations: 42233)
+
+
+Started GET "/num_finder/output.json?ch=6&commit=Convert" for 127.0.0.1 at 2022-12-10 01:08:18 +0300
+Processing by NumFinderController#output as JSON
+  Parameters: {"ch"=>"6", "commit"=>"Convert"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 305)
+
+

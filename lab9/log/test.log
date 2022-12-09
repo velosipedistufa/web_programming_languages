@@ -158,3 +158,397 @@ Processing by NumFinderController#output as HTML
   Rendered layout layouts/application.html.erb (Duration: 1.8ms | Allocations: 1558)
 Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.0ms | Allocations: 1858)
   [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/num_finder/input" for 127.0.0.1 at 2022-12-09 22:39:39 +0300
+Processing by NumFinderController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering num_finder/input.html.erb within layouts/application
+  Rendered num_finder/input.html.erb within layouts/application (Duration: 1.4ms | Allocations: 778)
+  Rendered layout layouts/application.html.erb (Duration: 612.4ms | Allocations: 116891)
+Completed 200 OK in 619ms (Views: 614.8ms | ActiveRecord: 0.0ms | Allocations: 119811)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/num_finder/output" for 127.0.0.1 at 2022-12-09 22:39:40 +0300
+Processing by NumFinderController#output as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering num_finder/output.html.erb within layouts/application
+  Rendered num_finder/output.html.erb within layouts/application (Duration: 0.7ms | Allocations: 327)
+  Rendered layout layouts/application.html.erb (Duration: 2.6ms | Allocations: 2035)
+Completed 200 OK in 4ms (Views: 3.0ms | ActiveRecord: 0.0ms | Allocations: 2497)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/num_finder/output?ch=6" for 127.0.0.1 at 2022-12-09 22:39:40 +0300
+Processing by NumFinderController#output as HTML
+  Parameters: {"ch"=>"6"}
+  Rendering layout layouts/application.html.erb
+  Rendering num_finder/output.html.erb within layouts/application
+  Rendered num_finder/output.html.erb within layouts/application (Duration: 0.2ms | Allocations: 113)
+  Rendered layout layouts/application.html.erb (Duration: 2.1ms | Allocations: 1822)
+Completed 200 OK in 3ms (Views: 2.6ms | ActiveRecord: 0.0ms | Allocations: 2162)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/num_finder/output?ch=9" for 127.0.0.1 at 2022-12-09 22:39:40 +0300
+Processing by NumFinderController#output as HTML
+  Parameters: {"ch"=>"9"}
+  Rendering layout layouts/application.html.erb
+  Rendering num_finder/output.html.erb within layouts/application
+  Rendered num_finder/output.html.erb within layouts/application (Duration: 0.2ms | Allocations: 113)
+  Rendered layout layouts/application.html.erb (Duration: 2.1ms | Allocations: 1817)
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.0ms | Allocations: 2157)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/num_finder/input" for 127.0.0.1 at 2022-12-09 22:43:03 +0300
+Processing by NumFinderController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering num_finder/input.html.erb within layouts/application
+  Rendered num_finder/input.html.erb within layouts/application (Duration: 1.4ms | Allocations: 778)
+  Rendered layout layouts/application.html.erb (Duration: 62.6ms | Allocations: 37146)
+Completed 200 OK in 70ms (Views: 65.0ms | ActiveRecord: 0.0ms | Allocations: 40068)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/num_finder/output" for 127.0.0.1 at 2022-12-09 22:43:03 +0300
+Processing by NumFinderController#output as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering num_finder/output.html.erb within layouts/application
+  Rendered num_finder/output.html.erb within layouts/application (Duration: 0.7ms | Allocations: 324)
+  Rendered layout layouts/application.html.erb (Duration: 2.4ms | Allocations: 2028)
+Completed 200 OK in 4ms (Views: 2.9ms | ActiveRecord: 0.0ms | Allocations: 2488)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/num_finder/input?ch=6" for 127.0.0.1 at 2022-12-09 22:43:03 +0300
+Processing by NumFinderController#input as HTML
+  Parameters: {"ch"=>"6"}
+  Rendering layout layouts/application.html.erb
+  Rendering num_finder/input.html.erb within layouts/application
+  Rendered num_finder/input.html.erb within layouts/application (Duration: 0.4ms | Allocations: 287)
+  Rendered layout layouts/application.html.erb (Duration: 2.2ms | Allocations: 2000)
+Completed 200 OK in 3ms (Views: 2.7ms | ActiveRecord: 0.0ms | Allocations: 2279)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/num_finder/output?ch=9" for 127.0.0.1 at 2022-12-09 22:43:03 +0300
+Processing by NumFinderController#output as HTML
+  Parameters: {"ch"=>"9"}
+  Rendering layout layouts/application.html.erb
+  Rendering num_finder/output.html.erb within layouts/application
+  Rendered num_finder/output.html.erb within layouts/application (Duration: 0.2ms | Allocations: 113)
+  Rendered layout layouts/application.html.erb (Duration: 2.0ms | Allocations: 1817)
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.0ms | Allocations: 2157)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/num_finder/input" for 127.0.0.1 at 2022-12-09 22:45:52 +0300
+Processing by NumFinderController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering num_finder/input.html.erb within layouts/application
+  Rendered num_finder/input.html.erb within layouts/application (Duration: 1.4ms | Allocations: 778)
+  Rendered layout layouts/application.html.erb (Duration: 64.1ms | Allocations: 37478)
+Completed 200 OK in 71ms (Views: 66.6ms | ActiveRecord: 0.0ms | Allocations: 40401)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/num_finder/output" for 127.0.0.1 at 2022-12-09 22:45:53 +0300
+Processing by NumFinderController#output as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering num_finder/output.html.erb within layouts/application
+  Rendered num_finder/output.html.erb within layouts/application (Duration: 0.7ms | Allocations: 324)
+  Rendered layout layouts/application.html.erb (Duration: 2.6ms | Allocations: 2028)
+Completed 200 OK in 4ms (Views: 3.0ms | ActiveRecord: 0.0ms | Allocations: 2488)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/num_finder/output?ch=6" for 127.0.0.1 at 2022-12-09 22:45:53 +0300
+Processing by NumFinderController#output as HTML
+  Parameters: {"ch"=>"6"}
+  Rendering layout layouts/application.html.erb
+  Rendering num_finder/output.html.erb within layouts/application
+  Rendered num_finder/output.html.erb within layouts/application (Duration: 0.2ms | Allocations: 113)
+  Rendered layout layouts/application.html.erb (Duration: 2.1ms | Allocations: 1817)
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.0ms | Allocations: 2157)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/num_finder/output?ch=9" for 127.0.0.1 at 2022-12-09 22:45:53 +0300
+Processing by NumFinderController#output as HTML
+  Parameters: {"ch"=>"9"}
+  Rendering layout layouts/application.html.erb
+  Rendering num_finder/output.html.erb within layouts/application
+  Rendered num_finder/output.html.erb within layouts/application (Duration: 0.2ms | Allocations: 113)
+  Rendered layout layouts/application.html.erb (Duration: 2.0ms | Allocations: 1817)
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.0ms | Allocations: 2157)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/num_finder/input" for 127.0.0.1 at 2022-12-09 22:46:23 +0300
+Processing by NumFinderController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering num_finder/input.html.erb within layouts/application
+  Rendered num_finder/input.html.erb within layouts/application (Duration: 1.4ms | Allocations: 778)
+  Rendered layout layouts/application.html.erb (Duration: 67.2ms | Allocations: 37406)
+Completed 200 OK in 74ms (Views: 69.6ms | ActiveRecord: 0.0ms | Allocations: 40329)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/num_finder/output" for 127.0.0.1 at 2022-12-09 22:46:23 +0300
+Processing by NumFinderController#output as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering num_finder/output.html.erb within layouts/application
+  Rendered num_finder/output.html.erb within layouts/application (Duration: 0.7ms | Allocations: 324)
+  Rendered layout layouts/application.html.erb (Duration: 2.5ms | Allocations: 2028)
+Completed 200 OK in 4ms (Views: 2.9ms | ActiveRecord: 0.0ms | Allocations: 2488)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/num_finder/output?ch=6" for 127.0.0.1 at 2022-12-09 22:46:23 +0300
+Processing by NumFinderController#output as HTML
+  Parameters: {"ch"=>"6"}
+  Rendering layout layouts/application.html.erb
+  Rendering num_finder/output.html.erb within layouts/application
+  Rendered num_finder/output.html.erb within layouts/application (Duration: 0.2ms | Allocations: 113)
+  Rendered layout layouts/application.html.erb (Duration: 2.0ms | Allocations: 1817)
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.0ms | Allocations: 2157)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/num_finder/output?ch=9" for 127.0.0.1 at 2022-12-09 22:46:23 +0300
+Processing by NumFinderController#output as HTML
+  Parameters: {"ch"=>"9"}
+  Rendering layout layouts/application.html.erb
+  Rendering num_finder/output.html.erb within layouts/application
+  Rendered num_finder/output.html.erb within layouts/application (Duration: 0.2ms | Allocations: 113)
+  Rendered layout layouts/application.html.erb (Duration: 2.0ms | Allocations: 1817)
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.0ms | Allocations: 2157)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/num_finder/input" for 127.0.0.1 at 2022-12-09 22:46:54 +0300
+Processing by NumFinderController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering num_finder/input.html.erb within layouts/application
+  Rendered num_finder/input.html.erb within layouts/application (Duration: 1.4ms | Allocations: 778)
+  Rendered layout layouts/application.html.erb (Duration: 70.3ms | Allocations: 37519)
+Completed 200 OK in 77ms (Views: 72.8ms | ActiveRecord: 0.0ms | Allocations: 40441)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/num_finder/output" for 127.0.0.1 at 2022-12-09 22:46:54 +0300
+Processing by NumFinderController#output as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering num_finder/output.html.erb within layouts/application
+  Rendered num_finder/output.html.erb within layouts/application (Duration: 0.7ms | Allocations: 324)
+  Rendered layout layouts/application.html.erb (Duration: 2.6ms | Allocations: 2028)
+Completed 200 OK in 4ms (Views: 3.0ms | ActiveRecord: 0.0ms | Allocations: 2488)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/num_finder/output?ch=6" for 127.0.0.1 at 2022-12-09 22:46:54 +0300
+Processing by NumFinderController#output as HTML
+  Parameters: {"ch"=>"6"}
+  Rendering layout layouts/application.html.erb
+  Rendering num_finder/output.html.erb within layouts/application
+  Rendered num_finder/output.html.erb within layouts/application (Duration: 0.3ms | Allocations: 113)
+  Rendered layout layouts/application.html.erb (Duration: 2.4ms | Allocations: 1817)
+Completed 200 OK in 3ms (Views: 2.9ms | ActiveRecord: 0.0ms | Allocations: 2157)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/num_finder/output?ch=9" for 127.0.0.1 at 2022-12-09 22:46:54 +0300
+Processing by NumFinderController#output as HTML
+  Parameters: {"ch"=>"9"}
+  Rendering layout layouts/application.html.erb
+  Rendering num_finder/output.html.erb within layouts/application
+  Rendered num_finder/output.html.erb within layouts/application (Duration: 0.2ms | Allocations: 113)
+  Rendered layout layouts/application.html.erb (Duration: 2.1ms | Allocations: 1817)
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.0ms | Allocations: 2157)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/num_finder/input" for 127.0.0.1 at 2022-12-09 22:51:14 +0300
+Processing by NumFinderController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering num_finder/input.html.erb within layouts/application
+  Rendered num_finder/input.html.erb within layouts/application (Duration: 2.0ms | Allocations: 778)
+  Rendered layout layouts/application.html.erb (Duration: 68.8ms | Allocations: 37527)
+Completed 200 OK in 76ms (Views: 71.3ms | ActiveRecord: 0.0ms | Allocations: 40449)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/num_finder/output" for 127.0.0.1 at 2022-12-09 22:51:14 +0300
+Processing by NumFinderController#output as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering num_finder/output.html.erb within layouts/application
+  Rendered num_finder/output.html.erb within layouts/application (Duration: 0.7ms | Allocations: 324)
+  Rendered layout layouts/application.html.erb (Duration: 2.5ms | Allocations: 2028)
+Completed 200 OK in 4ms (Views: 3.0ms | ActiveRecord: 0.0ms | Allocations: 2488)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/num_finder/output?ch=6" for 127.0.0.1 at 2022-12-09 22:51:14 +0300
+Processing by NumFinderController#output as HTML
+  Parameters: {"ch"=>"6"}
+  Rendering layout layouts/application.html.erb
+  Rendering num_finder/output.html.erb within layouts/application
+  Rendered num_finder/output.html.erb within layouts/application (Duration: 0.2ms | Allocations: 113)
+  Rendered layout layouts/application.html.erb (Duration: 2.0ms | Allocations: 1817)
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.0ms | Allocations: 2157)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/num_finder/output?ch=9" for 127.0.0.1 at 2022-12-09 22:51:14 +0300
+Processing by NumFinderController#output as HTML
+  Parameters: {"ch"=>"9"}
+  Rendering layout layouts/application.html.erb
+  Rendering num_finder/output.html.erb within layouts/application
+  Rendered num_finder/output.html.erb within layouts/application (Duration: 0.2ms | Allocations: 113)
+  Rendered layout layouts/application.html.erb (Duration: 2.6ms | Allocations: 1817)
+Completed 200 OK in 4ms (Views: 3.1ms | ActiveRecord: 0.0ms | Allocations: 2157)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/num_finder/input" for 127.0.0.1 at 2022-12-09 22:55:56 +0300
+Processing by NumFinderController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering num_finder/input.html.erb within layouts/application
+  Rendered num_finder/input.html.erb within layouts/application (Duration: 1.8ms | Allocations: 778)
+  Rendered layout layouts/application.html.erb (Duration: 68.7ms | Allocations: 37612)
+Completed 200 OK in 76ms (Views: 71.2ms | ActiveRecord: 0.0ms | Allocations: 40534)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/num_finder/output" for 127.0.0.1 at 2022-12-09 22:55:56 +0300
+Processing by NumFinderController#output as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering num_finder/output.html.erb within layouts/application
+  Rendered num_finder/output.html.erb within layouts/application (Duration: 0.7ms | Allocations: 324)
+  Rendered layout layouts/application.html.erb (Duration: 2.5ms | Allocations: 2028)
+Completed 200 OK in 4ms (Views: 3.0ms | ActiveRecord: 0.0ms | Allocations: 2488)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/num_finder/output?ch=6" for 127.0.0.1 at 2022-12-09 22:55:56 +0300
+Processing by NumFinderController#output as HTML
+  Parameters: {"ch"=>"6"}
+  Rendering layout layouts/application.html.erb
+  Rendering num_finder/output.html.erb within layouts/application
+  Rendered num_finder/output.html.erb within layouts/application (Duration: 0.2ms | Allocations: 113)
+  Rendered layout layouts/application.html.erb (Duration: 2.0ms | Allocations: 1817)
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.0ms | Allocations: 2157)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/num_finder/output?ch=9" for 127.0.0.1 at 2022-12-09 22:55:56 +0300
+Processing by NumFinderController#output as HTML
+  Parameters: {"ch"=>"9"}
+  Rendering layout layouts/application.html.erb
+  Rendering num_finder/output.html.erb within layouts/application
+  Rendered num_finder/output.html.erb within layouts/application (Duration: 0.2ms | Allocations: 113)
+  Rendered layout layouts/application.html.erb (Duration: 2.0ms | Allocations: 1817)
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.0ms | Allocations: 2157)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/num_finder/input" for 127.0.0.1 at 2022-12-09 22:56:50 +0300
+Processing by NumFinderController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering num_finder/input.html.erb within layouts/application
+  Rendered num_finder/input.html.erb within layouts/application (Duration: 1.5ms | Allocations: 778)
+  Rendered layout layouts/application.html.erb (Duration: 64.3ms | Allocations: 37598)
+Completed 200 OK in 73ms (Views: 66.7ms | ActiveRecord: 0.0ms | Allocations: 40520)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/num_finder/output" for 127.0.0.1 at 2022-12-09 22:56:50 +0300
+Processing by NumFinderController#output as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering num_finder/output.html.erb within layouts/application
+  Rendered num_finder/output.html.erb within layouts/application (Duration: 0.7ms | Allocations: 324)
+  Rendered layout layouts/application.html.erb (Duration: 2.5ms | Allocations: 2028)
+Completed 200 OK in 4ms (Views: 2.9ms | ActiveRecord: 0.0ms | Allocations: 2488)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/num_finder/output?ch=6" for 127.0.0.1 at 2022-12-09 22:56:50 +0300
+Processing by NumFinderController#output as HTML
+  Parameters: {"ch"=>"6"}
+  Rendering layout layouts/application.html.erb
+  Rendering num_finder/output.html.erb within layouts/application
+  Rendered num_finder/output.html.erb within layouts/application (Duration: 0.2ms | Allocations: 113)
+  Rendered layout layouts/application.html.erb (Duration: 2.0ms | Allocations: 1817)
+Completed 200 OK in 3ms (Views: 2.6ms | ActiveRecord: 0.0ms | Allocations: 2157)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/num_finder/output?ch=9" for 127.0.0.1 at 2022-12-09 22:56:50 +0300
+Processing by NumFinderController#output as HTML
+  Parameters: {"ch"=>"9"}
+  Rendering layout layouts/application.html.erb
+  Rendering num_finder/output.html.erb within layouts/application
+  Rendered num_finder/output.html.erb within layouts/application (Duration: 0.2ms | Allocations: 113)
+  Rendered layout layouts/application.html.erb (Duration: 2.0ms | Allocations: 1817)
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.0ms | Allocations: 2157)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/num_finder/input" for 127.0.0.1 at 2022-12-10 01:07:04 +0300
+Processing by NumFinderController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering num_finder/input.html.erb within layouts/application
+  Rendered num_finder/input.html.erb within layouts/application (Duration: 1.5ms | Allocations: 778)
+  Rendered layout layouts/application.html.erb (Duration: 66.1ms | Allocations: 37470)
+Completed 200 OK in 73ms (Views: 68.5ms | ActiveRecord: 0.0ms | Allocations: 40393)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/num_finder/output" for 127.0.0.1 at 2022-12-10 01:07:04 +0300
+Processing by NumFinderController#output as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering num_finder/output.html.erb within layouts/application
+  Rendered num_finder/output.html.erb within layouts/application (Duration: 0.7ms | Allocations: 324)
+  Rendered layout layouts/application.html.erb (Duration: 2.5ms | Allocations: 2028)
+Completed 200 OK in 4ms (Views: 2.9ms | ActiveRecord: 0.0ms | Allocations: 2488)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/num_finder/output?ch=6" for 127.0.0.1 at 2022-12-10 01:07:04 +0300
+Processing by NumFinderController#output as HTML
+  Parameters: {"ch"=>"6"}
+  Rendering layout layouts/application.html.erb
+  Rendering num_finder/output.html.erb within layouts/application
+  Rendered num_finder/output.html.erb within layouts/application (Duration: 0.2ms | Allocations: 113)
+  Rendered layout layouts/application.html.erb (Duration: 2.0ms | Allocations: 1817)
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.0ms | Allocations: 2157)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/num_finder/output?ch=9" for 127.0.0.1 at 2022-12-10 01:07:04 +0300
+Processing by NumFinderController#output as HTML
+  Parameters: {"ch"=>"9"}
+  Rendering layout layouts/application.html.erb
+  Rendering num_finder/output.html.erb within layouts/application
+  Rendered num_finder/output.html.erb within layouts/application (Duration: 0.2ms | Allocations: 113)
+  Rendered layout layouts/application.html.erb (Duration: 2.0ms | Allocations: 1817)
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.0ms | Allocations: 2157)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/num_finder/input" for 127.0.0.1 at 2022-12-10 01:08:13 +0300
+Processing by NumFinderController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering num_finder/input.html.erb within layouts/application
+  Rendered num_finder/input.html.erb within layouts/application (Duration: 1.4ms | Allocations: 778)
+  Rendered layout layouts/application.html.erb (Duration: 64.0ms | Allocations: 37558)
+Completed 200 OK in 71ms (Views: 66.4ms | ActiveRecord: 0.0ms | Allocations: 40480)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/num_finder/output" for 127.0.0.1 at 2022-12-10 01:08:13 +0300
+Processing by NumFinderController#output as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering num_finder/output.html.erb within layouts/application
+  Rendered num_finder/output.html.erb within layouts/application (Duration: 0.7ms | Allocations: 324)
+  Rendered layout layouts/application.html.erb (Duration: 2.5ms | Allocations: 2028)
+Completed 200 OK in 4ms (Views: 2.9ms | ActiveRecord: 0.0ms | Allocations: 2488)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/num_finder/output?ch=6" for 127.0.0.1 at 2022-12-10 01:08:13 +0300
+Processing by NumFinderController#output as HTML
+  Parameters: {"ch"=>"6"}
+  Rendering layout layouts/application.html.erb
+  Rendering num_finder/output.html.erb within layouts/application
+  Rendered num_finder/output.html.erb within layouts/application (Duration: 0.3ms | Allocations: 113)
+  Rendered layout layouts/application.html.erb (Duration: 2.1ms | Allocations: 1817)
+Completed 200 OK in 3ms (Views: 2.7ms | ActiveRecord: 0.0ms | Allocations: 2157)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/num_finder/output?ch=9" for 127.0.0.1 at 2022-12-10 01:08:13 +0300
+Processing by NumFinderController#output as HTML
+  Parameters: {"ch"=>"9"}
+  Rendering layout layouts/application.html.erb
+  Rendering num_finder/output.html.erb within layouts/application
+  Rendered num_finder/output.html.erb within layouts/application (Duration: 0.2ms | Allocations: 113)
+  Rendered layout layouts/application.html.erb (Duration: 2.0ms | Allocations: 1817)
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.0ms | Allocations: 2157)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mrollback transaction[0m
