@@ -11,6 +11,11 @@
   </head>
 
   <body>
+    <% if User.find_by_id(session[:current_user_id]) %>
+    <p>Current user:<%= User.find_by_id(session[:current_user_id]).username %></p>
+    <% else %>
+    <p>Not logged in</p>
+    <% end %>
     <%= yield %>
   </body>
 </html>

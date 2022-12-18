@@ -1544,3 +1544,60 @@ Processing by NumFinderController#input as HTML
 Completed 200 OK in 14ms (Views: 12.6ms | ActiveRecord: 0.0ms | Allocations: 2835)
 
 
+Started GET "/" for 127.0.0.1 at 2022-12-18 20:35:45 +0300
+Started GET "/num_finder/input" for 127.0.0.1 at 2022-12-18 20:35:45 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/num_finder/input"):
+  
+Started GET "/num_finder/input" for 127.0.0.1 at 2022-12-18 20:36:26 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/num_finder/input"):
+  
+Started GET "/" for 127.0.0.1 at 2022-12-18 20:36:32 +0300
+Started GET "/numfinder/input" for 127.0.0.1 at 2022-12-18 20:36:33 +0300
+Processing by NumfinderController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering numfinder/input.html.erb within layouts/application
+  Rendered numfinder/input.html.erb within layouts/application (Duration: 2.6ms | Allocations: 517)
+  Rendered layout layouts/application.html.erb (Duration: 638.8ms | Allocations: 91734)
+Completed 200 OK in 649ms (Views: 640.9ms | Allocations: 94160)
+
+
+Started GET "/numfinder/output?ch=21&commit=Convert" for 127.0.0.1 at 2022-12-18 20:36:36 +0300
+Processing by NumfinderController#output as HTML
+  Parameters: {"ch"=>"21", "commit"=>"Convert"}
+  Rendering layout layouts/application.html.erb
+  Rendering numfinder/output.html.erb within layouts/application
+  Rendered numfinder/output.html.erb within layouts/application (Duration: 0.7ms | Allocations: 275)
+  Rendered layout layouts/application.html.erb (Duration: 9.0ms | Allocations: 2828)
+Completed 200 OK in 11ms (Views: 9.8ms | Allocations: 3184)
+
+
+Started GET "/numfinder/input" for 127.0.0.1 at 2022-12-18 20:36:36 +0300
+Processing by NumfinderController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering numfinder/input.html.erb within layouts/application
+  Rendered numfinder/input.html.erb within layouts/application (Duration: 0.4ms | Allocations: 227)
+  Rendered layout layouts/application.html.erb (Duration: 7.4ms | Allocations: 2766)
+Completed 200 OK in 8ms (Views: 8.0ms | Allocations: 3018)
+
+
+Started GET "/numfinder/output?ch=&commit=Convert" for 127.0.0.1 at 2022-12-18 20:36:37 +0300
+Processing by NumfinderController#output as HTML
+  Parameters: {"ch"=>"", "commit"=>"Convert"}
+  Rendering layout layouts/application.html.erb
+  Rendering numfinder/output.html.erb within layouts/application
+  Rendered numfinder/output.html.erb within layouts/application (Duration: 0.4ms | Allocations: 82)
+  Rendered layout layouts/application.html.erb (Duration: 4.6ms | Allocations: 2598)
+Completed 200 OK in 6ms (Views: 5.2ms | Allocations: 2869)
+
+
+Started GET "/numfinder/input" for 127.0.0.1 at 2022-12-18 20:36:38 +0300
+Processing by NumfinderController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering numfinder/input.html.erb within layouts/application
+  Rendered numfinder/input.html.erb within layouts/application (Duration: 0.3ms | Allocations: 227)
+  Rendered layout layouts/application.html.erb (Duration: 6.3ms | Allocations: 2752)
+Completed 200 OK in 8ms (Views: 7.1ms | Allocations: 3008)
+
+

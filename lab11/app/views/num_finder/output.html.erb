@@ -1,0 +1,24 @@
+<strong><em>you are now viewing file that is located in app/views</em></strong>
+<table>
+  <tr>
+    <th>iteration</th>
+    <th>value of the proceeded element</th>
+  </tr>
+  <tr>
+    <td>entered number</td>
+    <td><%=@result_table[0] %></td>
+  </tr>
+  <tr>
+    <td>binary digit</td>
+    <td><%=@result_table[1] %></td>
+  </tr>
+  <tr>
+    <td>reversed binary number</td>
+    <td><%=@result_table[2] %></td>
+  </tr>
+  <tr>
+    <td>reversed decimal number</td>
+    <td><%=@result_table[3] %></td>
+  </tr>
+</table>
+<%= button_to "New", "/num_finder/input", method: :get %>

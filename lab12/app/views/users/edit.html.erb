@@ -1,0 +1,10 @@
+<h1>Editing user</h1>
+
+<%= render "form", user: @user %>
+
+<br>
+
+<div>
+  <%= button_to "list", "/users", method: :get %>
+  <%= link_to "Show this user", @user %>
+</div>

@@ -3,7 +3,7 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   # root "articles#index"
-  get 'num_finder/input'
-  get 'num_finder/output'
-  root to: redirect('num_finder/input')
+  get 'numfinder/input'
+  get 'numfinder/output'
+  root to: redirect('numfinder/input')
 end

@@ -1,0 +1,16 @@
+<h1>signin</h1>
+
+<%= form_tag("/sessions/create", :method => "get") do %>
+<%= label_tag("mail:") %> <br>
+<%= text_field_tag(:email) %> <br/>
+<%= label_tag("passwort:") %> <br>
+<%= text_field_tag(:password) %> <br/>
+<br/>
+<%= submit_tag("signin") %>
+<% end %>
+<%= button_to "new user", "/users/new", method: :get %>
+<% if params[:message] %>
+<p><%= params[:message] %></p>
+<% end %>
+
+<%= button_to "logout", "/sessions/exit", method: :get %>

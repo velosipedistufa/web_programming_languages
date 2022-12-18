@@ -1,0 +1,25 @@
+
+<h1>Users</h1>
+
+<table>
+    <tr>
+      <th>Name</th>
+      <th>Email</th>
+      <th>Redact</th>
+    </tr>
+  </thead>
+
+    <% @users.each do |user| %>
+      <tr>
+        <td><%= user.username %></td>
+        <td><%= user.email %></td>
+        <td><%= link_to 'Show', user %></td>
+      </tr>
+    <% end %>
+</table>
+
+<%= button_to "Add user", "/users/new", method: :get %>
+<%= button_to "Convertation", "/numfinder/input", method: :get %>
+<%= button_to "Destroy this user", User.find_by_id(session[:current_user_id]), method: :delete %>
+<%= link_to "XML", users_xml_path %>
+<%= link_to "Sign", root_path %>
