@@ -5343,3 +5343,773 @@ Processing by NumFinderController#input as HTML
 Completed 200 OK in 6ms (Views: 5.7ms | ActiveRecord: 0.0ms | Allocations: 3094)
 
 
+Started GET "/" for 127.0.0.1 at 2022-12-19 15:15:07 +0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/num_finder/input" for 127.0.0.1 at 2022-12-19 15:15:08 +0300
+Processing by NumFinderController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering num_finder/input.html.erb within layouts/application
+  Rendered num_finder/input.html.erb within layouts/application (Duration: 17.4ms | Allocations: 896)
+  Rendered layout layouts/application.html.erb (Duration: 497.2ms | Allocations: 41270)
+Completed 200 OK in 557ms (Views: 504.2ms | ActiveRecord: 0.0ms | Allocations: 44256)
+
+
+Started GET "/num_finder/output?ch=21&commit=Convert" for 127.0.0.1 at 2022-12-19 15:15:16 +0300
+Processing by NumFinderController#output as HTML
+  Parameters: {"ch"=>"21", "commit"=>"Convert"}
+  [1m[36mResult Load (0.4ms)[0m  [1m[34mSELECT "results".* FROM "results" WHERE "results"."in" = ? LIMIT ?[0m  [["in", 21], ["LIMIT", 1]]
+  ↳ app/controllers/num_finder_controller.rb:8:in `output'
+  Rendering layout layouts/application.html.erb
+  Rendering num_finder/output.html.erb within layouts/application
+  Rendered num_finder/output.html.erb within layouts/application (Duration: 1.2ms | Allocations: 312)
+  Rendered layout layouts/application.html.erb (Duration: 5.6ms | Allocations: 2828)
+Completed 200 OK in 53ms (Views: 6.3ms | ActiveRecord: 1.2ms | Allocations: 14422)
+
+
+Started GET "/num_finder/input" for 127.0.0.1 at 2022-12-19 15:15:18 +0300
+Processing by NumFinderController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering num_finder/input.html.erb within layouts/application
+  Rendered num_finder/input.html.erb within layouts/application (Duration: 0.7ms | Allocations: 301)
+  Rendered layout layouts/application.html.erb (Duration: 7.4ms | Allocations: 2649)
+Completed 200 OK in 8ms (Views: 8.0ms | ActiveRecord: 0.0ms | Allocations: 2911)
+
+
+Started GET "/num_finder/json" for 127.0.0.1 at 2022-12-19 15:15:32 +0300
+Processing by NumFinderController#json as HTML
+  [1m[36mResult Load (0.2ms)[0m  [1m[34mSELECT "results".* FROM "results"[0m
+  ↳ app/controllers/num_finder_controller.rb:18:in `json'
+Completed 200 OK in 6ms (Views: 4.2ms | ActiveRecord: 0.2ms | Allocations: 1223)
+
+
+Started GET "/num_finder/json" for 127.0.0.1 at 2022-12-19 15:15:32 +0300
+Processing by NumFinderController#json as HTML
+  [1m[36mResult Load (0.4ms)[0m  [1m[34mSELECT "results".* FROM "results"[0m
+  ↳ app/controllers/num_finder_controller.rb:18:in `json'
+Completed 200 OK in 4ms (Views: 3.4ms | ActiveRecord: 0.4ms | Allocations: 924)
+
+
+Started GET "/num_finder/input" for 127.0.0.1 at 2022-12-19 15:15:33 +0300
+Processing by NumFinderController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering num_finder/input.html.erb within layouts/application
+  Rendered num_finder/input.html.erb within layouts/application (Duration: 0.9ms | Allocations: 290)
+  Rendered layout layouts/application.html.erb (Duration: 6.4ms | Allocations: 2635)
+Completed 200 OK in 8ms (Views: 7.1ms | ActiveRecord: 0.0ms | Allocations: 2895)
+
+
+Started GET "/num_finder/xml" for 127.0.0.1 at 2022-12-19 15:15:34 +0300
+Processing by NumFinderController#xml as HTML
+  [1m[36mResult Load (0.3ms)[0m  [1m[34mSELECT "results".* FROM "results"[0m
+  ↳ app/controllers/num_finder_controller.rb:22:in `map'
+Completed 200 OK in 199ms (Views: 194.8ms | ActiveRecord: 0.3ms | Allocations: 2152)
+
+
+Started GET "/num_finder/xml" for 127.0.0.1 at 2022-12-19 15:15:35 +0300
+Processing by NumFinderController#xml as HTML
+  [1m[36mResult Load (0.1ms)[0m  [1m[34mSELECT "results".* FROM "results"[0m
+  ↳ app/controllers/num_finder_controller.rb:22:in `map'
+Completed 200 OK in 3ms (Views: 0.8ms | ActiveRecord: 0.1ms | Allocations: 1089)
+
+
+Started GET "/num_finder/input" for 127.0.0.1 at 2022-12-19 15:15:36 +0300
+Processing by NumFinderController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering num_finder/input.html.erb within layouts/application
+  Rendered num_finder/input.html.erb within layouts/application (Duration: 1.1ms | Allocations: 331)
+  Rendered layout layouts/application.html.erb (Duration: 7.9ms | Allocations: 2827)
+Completed 200 OK in 9ms (Views: 8.7ms | ActiveRecord: 0.0ms | Allocations: 3109)
+
+
+Started GET "/num_finder/input" for 127.0.0.1 at 2022-12-19 16:46:29 +0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by NumFinderController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering num_finder/input.html.erb within layouts/application
+  Rendered num_finder/input.html.erb within layouts/application (Duration: 2.1ms | Allocations: 919)
+  Rendered layout layouts/application.html.erb (Duration: 69.0ms | Allocations: 36164)
+Completed 200 OK in 78ms (Views: 71.5ms | ActiveRecord: 0.0ms | Allocations: 39162)
+
+
+Started GET "/num_finder/input" for 127.0.0.1 at 2022-12-19 16:46:31 +0300
+Processing by NumFinderController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering num_finder/input.html.erb within layouts/application
+  Rendered num_finder/input.html.erb within layouts/application (Duration: 0.6ms | Allocations: 331)
+  Rendered layout layouts/application.html.erb (Duration: 5.6ms | Allocations: 2895)
+Completed 200 OK in 7ms (Views: 6.3ms | ActiveRecord: 0.0ms | Allocations: 3218)
+
+
+Started GET "/num_finder/input" for 127.0.0.1 at 2022-12-20 11:15:33 +0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by NumFinderController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering num_finder/input.html.erb within layouts/application
+  Rendered num_finder/input.html.erb within layouts/application (Duration: 1.8ms | Allocations: 919)
+  Rendered layout layouts/application.html.erb (Duration: 77.4ms | Allocations: 36024)
+Completed 200 OK in 86ms (Views: 80.7ms | ActiveRecord: 0.0ms | Allocations: 39023)
+
+
+Started GET "/num_finder/output?ch=21&commit=Convert" for 127.0.0.1 at 2022-12-20 11:15:35 +0300
+Processing by NumFinderController#output as HTML
+  Parameters: {"ch"=>"21", "commit"=>"Convert"}
+  [1m[36mResult Load (0.3ms)[0m  [1m[34mSELECT "results".* FROM "results" WHERE "results"."in" = ? LIMIT ?[0m  [["in", 21], ["LIMIT", 1]]
+  ↳ app/controllers/num_finder_controller.rb:8:in `output'
+  Rendering layout layouts/application.html.erb
+  Rendering num_finder/output.html.erb within layouts/application
+  Rendered num_finder/output.html.erb within layouts/application (Duration: 0.9ms | Allocations: 312)
+  Rendered layout layouts/application.html.erb (Duration: 5.9ms | Allocations: 2953)
+Completed 200 OK in 23ms (Views: 6.6ms | ActiveRecord: 1.3ms | Allocations: 10660)
+
+
+Started GET "/num_finder/input" for 127.0.0.1 at 2022-12-20 11:15:36 +0300
+Processing by NumFinderController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering num_finder/input.html.erb within layouts/application
+  Rendered num_finder/input.html.erb within layouts/application (Duration: 1.3ms | Allocations: 301)
+  Rendered layout layouts/application.html.erb (Duration: 10.9ms | Allocations: 2775)
+Completed 200 OK in 13ms (Views: 12.1ms | ActiveRecord: 0.0ms | Allocations: 3037)
+
+
+Started GET "/num_finder/xml" for 127.0.0.1 at 2022-12-20 11:15:38 +0300
+Processing by NumFinderController#xml as HTML
+  [1m[36mResult Load (0.2ms)[0m  [1m[34mSELECT "results".* FROM "results"[0m
+  ↳ app/controllers/num_finder_controller.rb:22:in `map'
+Completed 200 OK in 7ms (Views: 5.1ms | ActiveRecord: 0.2ms | Allocations: 2277)
+
+
+Started GET "/num_finder/xml" for 127.0.0.1 at 2022-12-20 11:15:38 +0300
+Processing by NumFinderController#xml as HTML
+  [1m[36mResult Load (0.1ms)[0m  [1m[34mSELECT "results".* FROM "results"[0m
+  ↳ app/controllers/num_finder_controller.rb:22:in `map'
+Completed 200 OK in 3ms (Views: 1.1ms | ActiveRecord: 0.1ms | Allocations: 1089)
+
+
+Started GET "/" for 127.0.0.1 at 2022-12-20 11:22:21 +0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/num_finder/input" for 127.0.0.1 at 2022-12-20 11:22:21 +0300
+Processing by NumFinderController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering num_finder/input.html.erb within layouts/application
+  Rendered num_finder/input.html.erb within layouts/application (Duration: 2.7ms | Allocations: 896)
+  Rendered layout layouts/application.html.erb (Duration: 81.0ms | Allocations: 36247)
+Completed 200 OK in 91ms (Views: 83.7ms | ActiveRecord: 0.0ms | Allocations: 39235)
+
+
+Started GET "/num_finder/output?ch=21&commit=Convert" for 127.0.0.1 at 2022-12-20 11:46:12 +0300
+Processing by NumFinderController#output as HTML
+  Parameters: {"ch"=>"21", "commit"=>"Convert"}
+  [1m[36mResult Load (0.2ms)[0m  [1m[34mSELECT "results".* FROM "results" WHERE "results"."in" = ? LIMIT ?[0m  [["in", 21], ["LIMIT", 1]]
+  ↳ app/controllers/num_finder_controller.rb:8:in `output'
+  Rendering layout layouts/application.html.erb
+  Rendering num_finder/output.html.erb within layouts/application
+  Rendered num_finder/output.html.erb within layouts/application (Duration: 0.7ms | Allocations: 313)
+  Rendered layout layouts/application.html.erb (Duration: 5.2ms | Allocations: 3007)
+Completed 200 OK in 34ms (Views: 6.0ms | ActiveRecord: 1.4ms | Allocations: 13060)
+
+
+Started GET "/num_finder/input" for 127.0.0.1 at 2022-12-20 11:46:14 +0300
+Processing by NumFinderController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering num_finder/input.html.erb within layouts/application
+  Rendered num_finder/input.html.erb within layouts/application (Duration: 1.2ms | Allocations: 301)
+  Rendered layout layouts/application.html.erb (Duration: 9.9ms | Allocations: 2829)
+Completed 200 OK in 12ms (Views: 11.4ms | ActiveRecord: 0.0ms | Allocations: 3097)
+
+
+Started GET "/num_finder/xml" for 127.0.0.1 at 2022-12-20 11:46:18 +0300
+Processing by NumFinderController#xml as HTML
+  [1m[36mResult Load (0.2ms)[0m  [1m[34mSELECT "results".* FROM "results"[0m
+  ↳ app/controllers/num_finder_controller.rb:22:in `map'
+Completed 200 OK in 7ms (Views: 5.1ms | ActiveRecord: 0.2ms | Allocations: 2276)
+
+
+Started GET "/num_finder/xml" for 127.0.0.1 at 2022-12-20 11:46:18 +0300
+Processing by NumFinderController#xml as HTML
+  [1m[36mResult Load (0.2ms)[0m  [1m[34mSELECT "results".* FROM "results"[0m
+  ↳ app/controllers/num_finder_controller.rb:22:in `map'
+Completed 200 OK in 3ms (Views: 1.0ms | ActiveRecord: 0.2ms | Allocations: 1089)
+
+
+Started GET "/num_finder/input" for 127.0.0.1 at 2022-12-20 11:46:23 +0300
+Processing by NumFinderController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering num_finder/input.html.erb within layouts/application
+  Rendered num_finder/input.html.erb within layouts/application (Duration: 0.6ms | Allocations: 331)
+  Rendered layout layouts/application.html.erb (Duration: 7.8ms | Allocations: 3015)
+Completed 200 OK in 9ms (Views: 8.5ms | ActiveRecord: 0.0ms | Allocations: 3297)
+
+
+Started GET "/num_finder/json" for 127.0.0.1 at 2022-12-20 11:46:32 +0300
+Processing by NumFinderController#json as HTML
+  [1m[36mResult Load (0.2ms)[0m  [1m[34mSELECT "results".* FROM "results"[0m
+  ↳ app/controllers/num_finder_controller.rb:18:in `json'
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.2ms | Allocations: 1103)
+
+
+Started GET "/num_finder/json" for 127.0.0.1 at 2022-12-20 11:46:32 +0300
+Processing by NumFinderController#json as HTML
+  [1m[36mResult Load (0.1ms)[0m  [1m[34mSELECT "results".* FROM "results"[0m
+  ↳ app/controllers/num_finder_controller.rb:18:in `json'
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.1ms | Allocations: 924)
+
+
+Started GET "/num_finder/input" for 127.0.0.1 at 2022-12-20 11:46:34 +0300
+Processing by NumFinderController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering num_finder/input.html.erb within layouts/application
+  Rendered num_finder/input.html.erb within layouts/application (Duration: 0.5ms | Allocations: 290)
+  Rendered layout layouts/application.html.erb (Duration: 5.6ms | Allocations: 2837)
+Completed 200 OK in 7ms (Views: 6.6ms | ActiveRecord: 0.0ms | Allocations: 3093)
+
+
+Started GET "/num_finder/output?ch=24&commit=Convert" for 127.0.0.1 at 2022-12-20 11:46:39 +0300
+Processing by NumFinderController#output as HTML
+  Parameters: {"ch"=>"24", "commit"=>"Convert"}
+  [1m[36mResult Load (0.3ms)[0m  [1m[34mSELECT "results".* FROM "results" WHERE "results"."in" = ? LIMIT ?[0m  [["in", 24], ["LIMIT", 1]]
+  ↳ app/controllers/num_finder_controller.rb:8:in `output'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/num_finder_controller.rb:13:in `output'
+  [1m[36mResult Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "results" WHERE "results"."in" = ? LIMIT ?[0m  [["in", 24], ["LIMIT", 1]]
+  ↳ app/controllers/num_finder_controller.rb:13:in `output'
+  [1m[36mResult Create (0.5ms)[0m  [1m[32mINSERT INTO "results" ("in", "out", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["in", 24], ["out", "[24,\"11000\",\"00011\",3]"], ["created_at", "2022-12-20 08:46:39.873250"], ["updated_at", "2022-12-20 08:46:39.873250"]]
+  ↳ app/controllers/num_finder_controller.rb:13:in `output'
+  [1m[36mTRANSACTION (128.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/num_finder_controller.rb:13:in `output'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/num_finder_controller.rb:13:in `output'
+  [1m[36mResult Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "results" WHERE "results"."in" = ? AND "results"."id" != ? LIMIT ?[0m  [["in", 24], ["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/num_finder_controller.rb:13:in `output'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/num_finder_controller.rb:13:in `output'
+  Rendering layout layouts/application.html.erb
+  Rendering num_finder/output.html.erb within layouts/application
+  Rendered num_finder/output.html.erb within layouts/application (Duration: 0.3ms | Allocations: 81)
+  Rendered layout layouts/application.html.erb (Duration: 5.1ms | Allocations: 2611)
+Completed 200 OK in 159ms (Views: 5.7ms | ActiveRecord: 130.2ms | Allocations: 9215)
+
+
+Started GET "/num_finder/input" for 127.0.0.1 at 2022-12-20 11:46:41 +0300
+Processing by NumFinderController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering num_finder/input.html.erb within layouts/application
+  Rendered num_finder/input.html.erb within layouts/application (Duration: 0.8ms | Allocations: 290)
+  Rendered layout layouts/application.html.erb (Duration: 7.3ms | Allocations: 2823)
+Completed 200 OK in 9ms (Views: 8.1ms | ActiveRecord: 0.0ms | Allocations: 3084)
+
+
+Started GET "/num_finder/xml" for 127.0.0.1 at 2022-12-20 11:46:43 +0300
+Processing by NumFinderController#xml as HTML
+  [1m[36mResult Load (0.2ms)[0m  [1m[34mSELECT "results".* FROM "results"[0m
+  ↳ app/controllers/num_finder_controller.rb:22:in `map'
+Completed 200 OK in 5ms (Views: 1.4ms | ActiveRecord: 0.2ms | Allocations: 1151)
+
+
+Started GET "/num_finder/xml" for 127.0.0.1 at 2022-12-20 11:46:43 +0300
+Processing by NumFinderController#xml as HTML
+  [1m[36mResult Load (0.1ms)[0m  [1m[34mSELECT "results".* FROM "results"[0m
+  ↳ app/controllers/num_finder_controller.rb:22:in `map'
+Completed 200 OK in 3ms (Views: 0.9ms | ActiveRecord: 0.1ms | Allocations: 1149)
+
+
+Started GET "/num_finder/input" for 127.0.0.1 at 2022-12-20 11:46:44 +0300
+Processing by NumFinderController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering num_finder/input.html.erb within layouts/application
+  Rendered num_finder/input.html.erb within layouts/application (Duration: 0.7ms | Allocations: 290)
+  Rendered layout layouts/application.html.erb (Duration: 7.5ms | Allocations: 2844)
+Completed 200 OK in 11ms (Views: 9.0ms | ActiveRecord: 0.0ms | Allocations: 3103)
+
+
+Started GET "/num_finder/output?ch=2&commit=Convert" for 127.0.0.1 at 2022-12-20 11:46:46 +0300
+Processing by NumFinderController#output as HTML
+  Parameters: {"ch"=>"2", "commit"=>"Convert"}
+  [1m[36mResult Load (0.2ms)[0m  [1m[34mSELECT "results".* FROM "results" WHERE "results"."in" = ? LIMIT ?[0m  [["in", 2], ["LIMIT", 1]]
+  ↳ app/controllers/num_finder_controller.rb:8:in `output'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/num_finder_controller.rb:13:in `output'
+  [1m[36mResult Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "results" WHERE "results"."in" = ? LIMIT ?[0m  [["in", 2], ["LIMIT", 1]]
+  ↳ app/controllers/num_finder_controller.rb:13:in `output'
+  [1m[36mResult Create (0.6ms)[0m  [1m[32mINSERT INTO "results" ("in", "out", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["in", 2], ["out", "[2,\"10\",\"01\",1]"], ["created_at", "2022-12-20 08:46:46.576553"], ["updated_at", "2022-12-20 08:46:46.576553"]]
+  ↳ app/controllers/num_finder_controller.rb:13:in `output'
+  [1m[36mTRANSACTION (160.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/num_finder_controller.rb:13:in `output'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/num_finder_controller.rb:13:in `output'
+  [1m[36mResult Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "results" WHERE "results"."in" = ? AND "results"."id" != ? LIMIT ?[0m  [["in", 2], ["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/num_finder_controller.rb:13:in `output'
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/num_finder_controller.rb:13:in `output'
+  Rendering layout layouts/application.html.erb
+  Rendering num_finder/output.html.erb within layouts/application
+  Rendered num_finder/output.html.erb within layouts/application (Duration: 0.7ms | Allocations: 79)
+  Rendered layout layouts/application.html.erb (Duration: 13.3ms | Allocations: 2597)
+Completed 200 OK in 205ms (Views: 15.4ms | ActiveRecord: 162.8ms | Allocations: 7872)
+
+
+Started GET "/num_finder/input" for 127.0.0.1 at 2022-12-20 11:46:47 +0300
+Processing by NumFinderController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering num_finder/input.html.erb within layouts/application
+  Rendered num_finder/input.html.erb within layouts/application (Duration: 1.1ms | Allocations: 290)
+  Rendered layout layouts/application.html.erb (Duration: 9.2ms | Allocations: 2828)
+Completed 200 OK in 11ms (Views: 10.3ms | ActiveRecord: 0.0ms | Allocations: 3086)
+
+
+Started GET "/num_finder/xml" for 127.0.0.1 at 2022-12-20 11:46:49 +0300
+Processing by NumFinderController#xml as HTML
+  [1m[36mResult Load (0.2ms)[0m  [1m[34mSELECT "results".* FROM "results"[0m
+  ↳ app/controllers/num_finder_controller.rb:22:in `map'
+Completed 200 OK in 5ms (Views: 1.7ms | ActiveRecord: 0.2ms | Allocations: 1301)
+
+
+Started GET "/num_finder/xml" for 127.0.0.1 at 2022-12-20 11:46:49 +0300
+Processing by NumFinderController#xml as HTML
+  [1m[36mResult Load (0.2ms)[0m  [1m[34mSELECT "results".* FROM "results"[0m
+  ↳ app/controllers/num_finder_controller.rb:22:in `map'
+Completed 200 OK in 4ms (Views: 1.6ms | ActiveRecord: 0.2ms | Allocations: 1299)
+
+
+Started GET "/num_finder/input" for 127.0.0.1 at 2022-12-20 11:46:55 +0300
+Processing by NumFinderController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering num_finder/input.html.erb within layouts/application
+  Rendered num_finder/input.html.erb within layouts/application (Duration: 1.3ms | Allocations: 290)
+  Rendered layout layouts/application.html.erb (Duration: 10.3ms | Allocations: 2813)
+Completed 200 OK in 12ms (Views: 11.5ms | ActiveRecord: 0.0ms | Allocations: 3069)
+
+
+Started GET "/num_finder/output?ch=21&commit=Convert" for 127.0.0.1 at 2022-12-20 11:46:56 +0300
+Processing by NumFinderController#output as HTML
+  Parameters: {"ch"=>"21", "commit"=>"Convert"}
+  [1m[36mResult Load (0.2ms)[0m  [1m[34mSELECT "results".* FROM "results" WHERE "results"."in" = ? LIMIT ?[0m  [["in", 21], ["LIMIT", 1]]
+  ↳ app/controllers/num_finder_controller.rb:8:in `output'
+  Rendering layout layouts/application.html.erb
+  Rendering num_finder/output.html.erb within layouts/application
+  Rendered num_finder/output.html.erb within layouts/application (Duration: 0.2ms | Allocations: 79)
+  Rendered layout layouts/application.html.erb (Duration: 8.1ms | Allocations: 2603)
+Completed 200 OK in 11ms (Views: 9.0ms | ActiveRecord: 0.2ms | Allocations: 3344)
+
+
+Started GET "/num_finder/input" for 127.0.0.1 at 2022-12-20 11:46:57 +0300
+Processing by NumFinderController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering num_finder/input.html.erb within layouts/application
+  Rendered num_finder/input.html.erb within layouts/application (Duration: 1.3ms | Allocations: 290)
+  Rendered layout layouts/application.html.erb (Duration: 12.6ms | Allocations: 2822)
+Completed 200 OK in 15ms (Views: 14.0ms | ActiveRecord: 0.0ms | Allocations: 3080)
+
+
+Started GET "/num_finder/json" for 127.0.0.1 at 2022-12-20 11:46:58 +0300
+Processing by NumFinderController#json as HTML
+  [1m[36mResult Load (0.5ms)[0m  [1m[34mSELECT "results".* FROM "results"[0m
+  ↳ app/controllers/num_finder_controller.rb:18:in `json'
+Completed 200 OK in 5ms (Views: 4.1ms | ActiveRecord: 0.5ms | Allocations: 1140)
+
+
+Started GET "/num_finder/json" for 127.0.0.1 at 2022-12-20 11:46:58 +0300
+Processing by NumFinderController#json as HTML
+  [1m[36mResult Load (0.2ms)[0m  [1m[34mSELECT "results".* FROM "results"[0m
+  ↳ app/controllers/num_finder_controller.rb:18:in `json'
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.2ms | Allocations: 1137)
+
+
+Started GET "/num_finder/input" for 127.0.0.1 at 2022-12-20 11:47:00 +0300
+Processing by NumFinderController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering num_finder/input.html.erb within layouts/application
+  Rendered num_finder/input.html.erb within layouts/application (Duration: 0.6ms | Allocations: 290)
+  Rendered layout layouts/application.html.erb (Duration: 7.0ms | Allocations: 2843)
+Completed 200 OK in 9ms (Views: 8.5ms | ActiveRecord: 0.0ms | Allocations: 3100)
+
+
+Started GET "/num_finder/input" for 127.0.0.1 at 2022-12-20 11:47:02 +0300
+Processing by NumFinderController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering num_finder/input.html.erb within layouts/application
+  Rendered num_finder/input.html.erb within layouts/application (Duration: 1.4ms | Allocations: 290)
+  Rendered layout layouts/application.html.erb (Duration: 13.2ms | Allocations: 2823)
+Completed 200 OK in 15ms (Views: 14.4ms | ActiveRecord: 0.0ms | Allocations: 3081)
+
+
+Started GET "/num_finder/output?ch=21&commit=Convert" for 127.0.0.1 at 2022-12-20 11:47:24 +0300
+Processing by NumFinderController#output as HTML
+  Parameters: {"ch"=>"21", "commit"=>"Convert"}
+  [1m[36mResult Load (0.3ms)[0m  [1m[34mSELECT "results".* FROM "results" WHERE "results"."in" = ? LIMIT ?[0m  [["in", 21], ["LIMIT", 1]]
+  ↳ app/controllers/num_finder_controller.rb:8:in `output'
+  Rendering layout layouts/application.html.erb
+  Rendering num_finder/output.html.erb within layouts/application
+  Rendered num_finder/output.html.erb within layouts/application (Duration: 0.5ms | Allocations: 79)
+  Rendered layout layouts/application.html.erb (Duration: 12.3ms | Allocations: 2597)
+Completed 200 OK in 19ms (Views: 13.7ms | ActiveRecord: 0.3ms | Allocations: 3337)
+
+
+Started GET "/num_finder/input" for 127.0.0.1 at 2022-12-20 11:55:51 +0300
+Processing by NumFinderController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering num_finder/input.html.erb within layouts/application
+  Rendered num_finder/input.html.erb within layouts/application (Duration: 1.3ms | Allocations: 290)
+  Rendered layout layouts/application.html.erb (Duration: 13.3ms | Allocations: 2834)
+Completed 200 OK in 16ms (Views: 14.7ms | Allocations: 3089)
+
+
+Started GET "/" for 127.0.0.1 at 2022-12-20 12:02:36 +0300
+Started GET "/num_finder/input" for 127.0.0.1 at 2022-12-20 12:02:36 +0300
+Processing by NumFinderController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering num_finder/input.html.erb within layouts/application
+  Rendered num_finder/input.html.erb within layouts/application (Duration: 0.6ms | Allocations: 387)
+  Rendered layout layouts/application.html.erb (Duration: 21.0ms | Allocations: 14359)
+Completed 200 OK in 23ms (Views: 22.2ms | Allocations: 14962)
+
+
+Started GET "/" for 127.0.0.1 at 2022-12-20 12:04:17 +0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/num_finder/input" for 127.0.0.1 at 2022-12-20 12:04:17 +0300
+Processing by NumFinderController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering num_finder/input.html.erb within layouts/application
+  Rendered num_finder/input.html.erb within layouts/application (Duration: 3.2ms | Allocations: 896)
+  Rendered layout layouts/application.html.erb (Duration: 78.6ms | Allocations: 35621)
+Completed 200 OK in 90ms (Views: 82.8ms | ActiveRecord: 0.0ms | Allocations: 38603)
+
+
+Started GET "/num_finder/output?ch=1&commit=Convert" for 127.0.0.1 at 2022-12-20 12:04:50 +0300
+Processing by NumFinderController#output as HTML
+  Parameters: {"ch"=>"1", "commit"=>"Convert"}
+  [1m[36mResult Load (0.2ms)[0m  [1m[34mSELECT "results".* FROM "results" WHERE "results"."in" = ? LIMIT ?[0m  [["in", 1], ["LIMIT", 1]]
+  ↳ app/controllers/num_finder_controller.rb:8:in `output'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/num_finder_controller.rb:13:in `output'
+  [1m[36mResult Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "results" WHERE "results"."in" = ? LIMIT ?[0m  [["in", 1], ["LIMIT", 1]]
+  ↳ app/controllers/num_finder_controller.rb:13:in `output'
+  [1m[36mResult Create (0.4ms)[0m  [1m[32mINSERT INTO "results" ("in", "out", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["in", 1], ["out", "[1,\"1\",\"1\",1]"], ["created_at", "2022-12-20 09:04:50.498397"], ["updated_at", "2022-12-20 09:04:50.498397"]]
+  ↳ app/controllers/num_finder_controller.rb:13:in `output'
+  [1m[36mTRANSACTION (138.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/num_finder_controller.rb:13:in `output'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/num_finder_controller.rb:13:in `output'
+  [1m[36mResult Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "results" WHERE "results"."in" = ? AND "results"."id" != ? LIMIT ?[0m  [["in", 1], ["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/num_finder_controller.rb:13:in `output'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/num_finder_controller.rb:13:in `output'
+  Rendering layout layouts/application.html.erb
+  Rendering num_finder/output.html.erb within layouts/application
+  Rendered num_finder/output.html.erb within layouts/application (Duration: 1.7ms | Allocations: 321)
+  Rendered layout layouts/application.html.erb (Duration: 42.5ms | Allocations: 14506)
+Completed 200 OK in 221ms (Views: 45.8ms | ActiveRecord: 141.3ms | Allocations: 28674)
+
+
+Started GET "/num_finder/input" for 127.0.0.1 at 2022-12-20 12:04:51 +0300
+Processing by NumFinderController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering num_finder/input.html.erb within layouts/application
+  Rendered num_finder/input.html.erb within layouts/application (Duration: 0.8ms | Allocations: 340)
+  Rendered layout layouts/application.html.erb (Duration: 6.7ms | Allocations: 2882)
+Completed 200 OK in 9ms (Views: 7.6ms | ActiveRecord: 0.0ms | Allocations: 3158)
+
+
+Started GET "/num_finder/xml" for 127.0.0.1 at 2022-12-20 12:04:53 +0300
+Processing by NumFinderController#xml as HTML
+  [1m[36mResult Load (0.2ms)[0m  [1m[34mSELECT "results".* FROM "results"[0m
+  ↳ app/controllers/num_finder_controller.rb:22:in `map'
+Completed 200 OK in 9ms (Views: 6.5ms | ActiveRecord: 0.2ms | Allocations: 2746)
+
+
+Started GET "/num_finder/xml" for 127.0.0.1 at 2022-12-20 12:04:53 +0300
+Processing by NumFinderController#xml as HTML
+  [1m[36mResult Load (0.2ms)[0m  [1m[34mSELECT "results".* FROM "results"[0m
+  ↳ app/controllers/num_finder_controller.rb:22:in `map'
+Completed 200 OK in 5ms (Views: 1.5ms | ActiveRecord: 0.2ms | Allocations: 1537)
+
+
+Started GET "/num_finder/input" for 127.0.0.1 at 2022-12-20 12:04:56 +0300
+Processing by NumFinderController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering num_finder/input.html.erb within layouts/application
+  Rendered num_finder/input.html.erb within layouts/application (Duration: 1.0ms | Allocations: 331)
+  Rendered layout layouts/application.html.erb (Duration: 9.8ms | Allocations: 3025)
+Completed 200 OK in 11ms (Views: 10.7ms | ActiveRecord: 0.0ms | Allocations: 3313)
+
+
+Started GET "/num_finder/output?ch=12&commit=Convert" for 127.0.0.1 at 2022-12-20 12:05:09 +0300
+Processing by NumFinderController#output as HTML
+  Parameters: {"ch"=>"12", "commit"=>"Convert"}
+  [1m[36mResult Load (0.1ms)[0m  [1m[34mSELECT "results".* FROM "results" WHERE "results"."in" = ? LIMIT ?[0m  [["in", 12], ["LIMIT", 1]]
+  ↳ app/controllers/num_finder_controller.rb:8:in `output'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/num_finder_controller.rb:13:in `output'
+  [1m[36mResult Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "results" WHERE "results"."in" = ? LIMIT ?[0m  [["in", 12], ["LIMIT", 1]]
+  ↳ app/controllers/num_finder_controller.rb:13:in `output'
+  [1m[36mResult Create (0.4ms)[0m  [1m[32mINSERT INTO "results" ("in", "out", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["in", 12], ["out", "[12,\"1100\",\"0011\",3]"], ["created_at", "2022-12-20 09:05:09.124013"], ["updated_at", "2022-12-20 09:05:09.124013"]]
+  ↳ app/controllers/num_finder_controller.rb:13:in `output'
+  [1m[36mTRANSACTION (134.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/num_finder_controller.rb:13:in `output'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/num_finder_controller.rb:13:in `output'
+  [1m[36mResult Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "results" WHERE "results"."in" = ? AND "results"."id" != ? LIMIT ?[0m  [["in", 12], ["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/num_finder_controller.rb:13:in `output'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/num_finder_controller.rb:13:in `output'
+  Rendering layout layouts/application.html.erb
+  Rendering num_finder/output.html.erb within layouts/application
+  Rendered num_finder/output.html.erb within layouts/application (Duration: 0.2ms | Allocations: 81)
+  Rendered layout layouts/application.html.erb (Duration: 4.7ms | Allocations: 2618)
+Completed 200 OK in 169ms (Views: 5.3ms | ActiveRecord: 135.8ms | Allocations: 8095)
+
+
+Started GET "/num_finder/output?ch=-1&commit=Convert" for 127.0.0.1 at 2022-12-20 12:05:14 +0300
+Processing by NumFinderController#output as HTML
+  Parameters: {"ch"=>"-1", "commit"=>"Convert"}
+  [1m[36mResult Load (0.2ms)[0m  [1m[34mSELECT "results".* FROM "results" WHERE "results"."in" = ? LIMIT ?[0m  [["in", -1], ["LIMIT", 1]]
+  ↳ app/controllers/num_finder_controller.rb:8:in `output'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/num_finder_controller.rb:13:in `output'
+  [1m[36mResult Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "results" WHERE "results"."in" = ? LIMIT ?[0m  [["in", -1], ["LIMIT", 1]]
+  ↳ app/controllers/num_finder_controller.rb:13:in `output'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/num_finder_controller.rb:13:in `output'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/num_finder_controller.rb:13:in `output'
+  [1m[36mResult Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "results" WHERE "results"."in" = ? LIMIT ?[0m  [["in", -1], ["LIMIT", 1]]
+  ↳ app/controllers/num_finder_controller.rb:13:in `output'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/num_finder_controller.rb:13:in `output'
+  Rendering layout layouts/application.html.erb
+  Rendering num_finder/output.html.erb within layouts/application
+  Rendered num_finder/output.html.erb within layouts/application (Duration: 0.7ms | Allocations: 79)
+  Rendered layout layouts/application.html.erb (Duration: 7.9ms | Allocations: 2622)
+Completed 200 OK in 33ms (Views: 11.8ms | ActiveRecord: 1.2ms | Allocations: 8084)
+
+
+Started GET "/num_finder/output?ch=-6&commit=Convert" for 127.0.0.1 at 2022-12-20 12:05:21 +0300
+Processing by NumFinderController#output as HTML
+  Parameters: {"ch"=>"-6", "commit"=>"Convert"}
+  [1m[36mResult Load (0.1ms)[0m  [1m[34mSELECT "results".* FROM "results" WHERE "results"."in" = ? LIMIT ?[0m  [["in", -6], ["LIMIT", 1]]
+  ↳ app/controllers/num_finder_controller.rb:8:in `output'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/num_finder_controller.rb:13:in `output'
+  [1m[36mResult Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "results" WHERE "results"."in" = ? LIMIT ?[0m  [["in", -6], ["LIMIT", 1]]
+  ↳ app/controllers/num_finder_controller.rb:13:in `output'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/num_finder_controller.rb:13:in `output'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/num_finder_controller.rb:13:in `output'
+  [1m[36mResult Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "results" WHERE "results"."in" = ? LIMIT ?[0m  [["in", -6], ["LIMIT", 1]]
+  ↳ app/controllers/num_finder_controller.rb:13:in `output'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/num_finder_controller.rb:13:in `output'
+  Rendering layout layouts/application.html.erb
+  Rendering num_finder/output.html.erb within layouts/application
+  Rendered num_finder/output.html.erb within layouts/application (Duration: 0.2ms | Allocations: 79)
+  Rendered layout layouts/application.html.erb (Duration: 7.7ms | Allocations: 2631)
+Completed 200 OK in 23ms (Views: 8.5ms | ActiveRecord: 1.0ms | Allocations: 8040)
+
+
+Started GET "/" for 127.0.0.1 at 2022-12-20 12:07:41 +0300
+Started GET "/num_finder/input" for 127.0.0.1 at 2022-12-20 12:07:41 +0300
+Processing by NumFinderController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering num_finder/input.html.erb within layouts/application
+  Rendered num_finder/input.html.erb within layouts/application (Duration: 0.7ms | Allocations: 387)
+  Rendered layout layouts/application.html.erb (Duration: 20.8ms | Allocations: 14352)
+Completed 200 OK in 23ms (Views: 22.1ms | Allocations: 14955)
+
+
+Started GET "/num_finder/output?ch=-6&commit=Convert" for 127.0.0.1 at 2022-12-20 12:12:25 +0300
+Processing by NumFinderController#output as HTML
+  Parameters: {"ch"=>"-6", "commit"=>"Convert"}
+  [1m[36mResult Load (0.2ms)[0m  [1m[34mSELECT "results".* FROM "results" WHERE "results"."in" = ? LIMIT ?[0m  [["in", -6], ["LIMIT", 1]]
+  ↳ app/controllers/num_finder_controller.rb:8:in `output'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/num_finder_controller.rb:13:in `output'
+  [1m[36mResult Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "results" WHERE "results"."in" = ? LIMIT ?[0m  [["in", -6], ["LIMIT", 1]]
+  ↳ app/controllers/num_finder_controller.rb:13:in `output'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/num_finder_controller.rb:13:in `output'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/num_finder_controller.rb:13:in `output'
+  [1m[36mResult Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "results" WHERE "results"."in" = ? LIMIT ?[0m  [["in", -6], ["LIMIT", 1]]
+  ↳ app/controllers/num_finder_controller.rb:13:in `output'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/num_finder_controller.rb:13:in `output'
+  Rendering layout layouts/application.html.erb
+  Rendering num_finder/output.html.erb within layouts/application
+  Rendered num_finder/output.html.erb within layouts/application (Duration: 0.2ms | Allocations: 117)
+  Rendered layout layouts/application.html.erb (Duration: 66.8ms | Allocations: 14280)
+Completed 200 OK in 88ms (Views: 68.2ms | ActiveRecord: 1.9ms | Allocations: 23474)
+
+
+Started GET "/num_finder/input" for 127.0.0.1 at 2022-12-20 12:12:45 +0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by NumFinderController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering num_finder/input.html.erb within layouts/application
+  Rendered num_finder/input.html.erb within layouts/application (Duration: 2.2ms | Allocations: 919)
+  Rendered layout layouts/application.html.erb (Duration: 78.5ms | Allocations: 35837)
+Completed 200 OK in 87ms (Views: 81.3ms | ActiveRecord: 0.0ms | Allocations: 38836)
+
+
+Started GET "/num_finder/output?ch=12&commit=Convert" for 127.0.0.1 at 2022-12-20 12:12:46 +0300
+Processing by NumFinderController#output as HTML
+  Parameters: {"ch"=>"12", "commit"=>"Convert"}
+  [1m[36mResult Load (0.4ms)[0m  [1m[34mSELECT "results".* FROM "results" WHERE "results"."in" = ? LIMIT ?[0m  [["in", 12], ["LIMIT", 1]]
+  ↳ app/controllers/num_finder_controller.rb:8:in `output'
+  Rendering layout layouts/application.html.erb
+  Rendering num_finder/output.html.erb within layouts/application
+  Rendered num_finder/output.html.erb within layouts/application (Duration: 0.7ms | Allocations: 312)
+  Rendered layout layouts/application.html.erb (Duration: 6.9ms | Allocations: 3030)
+Completed 200 OK in 28ms (Views: 7.6ms | ActiveRecord: 1.4ms | Allocations: 10804)
+
+
+Started GET "/num_finder/output?ch=-12&commit=Convert" for 127.0.0.1 at 2022-12-20 12:12:52 +0300
+Processing by NumFinderController#output as HTML
+  Parameters: {"ch"=>"-12", "commit"=>"Convert"}
+  [1m[36mResult Load (0.2ms)[0m  [1m[34mSELECT "results".* FROM "results" WHERE "results"."in" = ? LIMIT ?[0m  [["in", -12], ["LIMIT", 1]]
+  ↳ app/controllers/num_finder_controller.rb:8:in `output'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/num_finder_controller.rb:13:in `output'
+  [1m[36mResult Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "results" WHERE "results"."in" = ? LIMIT ?[0m  [["in", -12], ["LIMIT", 1]]
+  ↳ app/controllers/num_finder_controller.rb:13:in `output'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/num_finder_controller.rb:13:in `output'
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/num_finder_controller.rb:13:in `output'
+  [1m[36mResult Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "results" WHERE "results"."in" = ? LIMIT ?[0m  [["in", -12], ["LIMIT", 1]]
+  ↳ app/controllers/num_finder_controller.rb:13:in `output'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/num_finder_controller.rb:13:in `output'
+  Rendering layout layouts/application.html.erb
+  Rendering num_finder/output.html.erb within layouts/application
+  Rendered num_finder/output.html.erb within layouts/application (Duration: 0.3ms | Allocations: 79)
+  Rendered layout layouts/application.html.erb (Duration: 6.9ms | Allocations: 2610)
+Completed 200 OK in 28ms (Views: 8.2ms | ActiveRecord: 1.6ms | Allocations: 8650)
+
+
+Started GET "/num_finder/input" for 127.0.0.1 at 2022-12-20 12:12:57 +0300
+Processing by NumFinderController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering num_finder/input.html.erb within layouts/application
+  Rendered num_finder/input.html.erb within layouts/application (Duration: 1.7ms | Allocations: 301)
+  Rendered layout layouts/application.html.erb (Duration: 15.4ms | Allocations: 2837)
+Completed 200 OK in 18ms (Views: 16.8ms | ActiveRecord: 0.0ms | Allocations: 3099)
+
+
+Started GET "/num_finder/json" for 127.0.0.1 at 2022-12-20 12:12:59 +0300
+Processing by NumFinderController#json as HTML
+  [1m[36mResult Load (0.5ms)[0m  [1m[34mSELECT "results".* FROM "results"[0m
+  ↳ app/controllers/num_finder_controller.rb:18:in `json'
+Completed 200 OK in 9ms (Views: 7.5ms | ActiveRecord: 0.5ms | Allocations: 1562)
+
+
+Started GET "/num_finder/json" for 127.0.0.1 at 2022-12-20 12:12:59 +0300
+Processing by NumFinderController#json as HTML
+  [1m[36mResult Load (0.1ms)[0m  [1m[34mSELECT "results".* FROM "results"[0m
+  ↳ app/controllers/num_finder_controller.rb:18:in `json'
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.1ms | Allocations: 1349)
+
+
+Started GET "/num_finder/input" for 127.0.0.1 at 2022-12-20 12:13:06 +0300
+Processing by NumFinderController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering num_finder/input.html.erb within layouts/application
+  Rendered num_finder/input.html.erb within layouts/application (Duration: 0.7ms | Allocations: 290)
+  Rendered layout layouts/application.html.erb (Duration: 8.4ms | Allocations: 2819)
+Completed 200 OK in 10ms (Views: 9.2ms | ActiveRecord: 0.0ms | Allocations: 3075)
+
+
+Started GET "/num_finder/output?ch=12&commit=Convert" for 127.0.0.1 at 2022-12-20 12:13:15 +0300
+Processing by NumFinderController#output as HTML
+  Parameters: {"ch"=>"12", "commit"=>"Convert"}
+  [1m[36mResult Load (0.3ms)[0m  [1m[34mSELECT "results".* FROM "results" WHERE "results"."in" = ? LIMIT ?[0m  [["in", 12], ["LIMIT", 1]]
+  ↳ app/controllers/num_finder_controller.rb:8:in `output'
+  Rendering layout layouts/application.html.erb
+  Rendering num_finder/output.html.erb within layouts/application
+  Rendered num_finder/output.html.erb within layouts/application (Duration: 0.4ms | Allocations: 79)
+  Rendered layout layouts/application.html.erb (Duration: 9.0ms | Allocations: 2603)
+Completed 200 OK in 14ms (Views: 10.1ms | ActiveRecord: 0.3ms | Allocations: 3343)
+
+
+Started GET "/num_finder/output?ch=tt&commit=Convert" for 127.0.0.1 at 2022-12-20 12:13:19 +0300
+Processing by NumFinderController#output as HTML
+  Parameters: {"ch"=>"tt", "commit"=>"Convert"}
+  [1m[36mResult Load (0.1ms)[0m  [1m[34mSELECT "results".* FROM "results" WHERE "results"."in" = ? LIMIT ?[0m  [["in", 0], ["LIMIT", 1]]
+  ↳ app/controllers/num_finder_controller.rb:8:in `output'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/num_finder_controller.rb:13:in `output'
+  [1m[36mResult Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "results" WHERE "results"."in" = ? LIMIT ?[0m  [["in", 0], ["LIMIT", 1]]
+  ↳ app/controllers/num_finder_controller.rb:13:in `output'
+  [1m[36mResult Create (0.6ms)[0m  [1m[32mINSERT INTO "results" ("in", "out", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["in", 0], ["out", "[0,\"0\",\"0\",0]"], ["created_at", "2022-12-20 09:13:19.916047"], ["updated_at", "2022-12-20 09:13:19.916047"]]
+  ↳ app/controllers/num_finder_controller.rb:13:in `output'
+  [1m[36mTRANSACTION (114.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/num_finder_controller.rb:13:in `output'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/num_finder_controller.rb:13:in `output'
+  [1m[36mResult Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "results" WHERE "results"."in" = ? AND "results"."id" != ? LIMIT ?[0m  [["in", 0], ["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/num_finder_controller.rb:13:in `output'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/num_finder_controller.rb:13:in `output'
+  Rendering layout layouts/application.html.erb
+  Rendering num_finder/output.html.erb within layouts/application
+  Rendered num_finder/output.html.erb within layouts/application (Duration: 0.3ms | Allocations: 82)
+  Rendered layout layouts/application.html.erb (Duration: 4.6ms | Allocations: 2600)
+Completed 200 OK in 139ms (Views: 5.3ms | ActiveRecord: 116.4ms | Allocations: 8800)
+
+
+Started GET "/num_finder/output?ch=tt1&commit=Convert" for 127.0.0.1 at 2022-12-20 12:13:27 +0300
+Processing by NumFinderController#output as HTML
+  Parameters: {"ch"=>"tt1", "commit"=>"Convert"}
+  [1m[36mResult Load (0.1ms)[0m  [1m[34mSELECT "results".* FROM "results" WHERE "results"."in" = ? LIMIT ?[0m  [["in", 0], ["LIMIT", 1]]
+  ↳ app/controllers/num_finder_controller.rb:8:in `output'
+  Rendering layout layouts/application.html.erb
+  Rendering num_finder/output.html.erb within layouts/application
+  Rendered num_finder/output.html.erb within layouts/application (Duration: 0.3ms | Allocations: 81)
+  Rendered layout layouts/application.html.erb (Duration: 8.0ms | Allocations: 2602)
+Completed 200 OK in 11ms (Views: 9.3ms | ActiveRecord: 0.1ms | Allocations: 3350)
+
+
+Started GET "/num_finder/output?ch=tt13&commit=Convert" for 127.0.0.1 at 2022-12-20 12:13:32 +0300
+Processing by NumFinderController#output as HTML
+  Parameters: {"ch"=>"tt13", "commit"=>"Convert"}
+  [1m[36mResult Load (0.2ms)[0m  [1m[34mSELECT "results".* FROM "results" WHERE "results"."in" = ? LIMIT ?[0m  [["in", 0], ["LIMIT", 1]]
+  ↳ app/controllers/num_finder_controller.rb:8:in `output'
+  Rendering layout layouts/application.html.erb
+  Rendering num_finder/output.html.erb within layouts/application
+  Rendered num_finder/output.html.erb within layouts/application (Duration: 0.4ms | Allocations: 81)
+  Rendered layout layouts/application.html.erb (Duration: 7.8ms | Allocations: 2618)
+Completed 200 OK in 12ms (Views: 8.8ms | ActiveRecord: 0.2ms | Allocations: 3359)
+
+
+Started GET "/num_finder/output?ch=-8&commit=Convert" for 127.0.0.1 at 2022-12-20 12:13:39 +0300
+Processing by NumFinderController#output as HTML
+  Parameters: {"ch"=>"-8", "commit"=>"Convert"}
+  [1m[36mResult Load (0.1ms)[0m  [1m[34mSELECT "results".* FROM "results" WHERE "results"."in" = ? LIMIT ?[0m  [["in", -8], ["LIMIT", 1]]
+  ↳ app/controllers/num_finder_controller.rb:8:in `output'
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/num_finder_controller.rb:13:in `output'
+  [1m[36mResult Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "results" WHERE "results"."in" = ? LIMIT ?[0m  [["in", -8], ["LIMIT", 1]]
+  ↳ app/controllers/num_finder_controller.rb:13:in `output'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/num_finder_controller.rb:13:in `output'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/num_finder_controller.rb:13:in `output'
+  [1m[36mResult Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "results" WHERE "results"."in" = ? LIMIT ?[0m  [["in", -8], ["LIMIT", 1]]
+  ↳ app/controllers/num_finder_controller.rb:13:in `output'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/num_finder_controller.rb:13:in `output'
+  Rendering layout layouts/application.html.erb
+  Rendering num_finder/output.html.erb within layouts/application
+  Rendered num_finder/output.html.erb within layouts/application (Duration: 0.3ms | Allocations: 79)
+  Rendered layout layouts/application.html.erb (Duration: 8.7ms | Allocations: 2609)
+Completed 200 OK in 31ms (Views: 9.9ms | ActiveRecord: 1.6ms | Allocations: 8012)
+
+
+Started GET "/num_finder/input" for 127.0.0.1 at 2022-12-20 12:19:28 +0300
+Processing by NumFinderController#input as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering num_finder/input.html.erb within layouts/application
+  Rendered num_finder/input.html.erb within layouts/application (Duration: 1.0ms | Allocations: 290)
+  Rendered layout layouts/application.html.erb (Duration: 8.8ms | Allocations: 2849)
+Completed 200 OK in 10ms (Views: 9.7ms | Allocations: 3102)
+
+

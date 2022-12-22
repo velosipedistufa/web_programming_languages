@@ -2,7 +2,6 @@
 
 # class ApplicationController
 class ApplicationController < ActionController::Base
-  include SessionsHelper
 
   before_action :authenticate, except: %i[new create]
 

@@ -1,4 +1,5 @@
 require 'rails_helper'
+require 'shoulda-matchers'
 
 RSpec.describe Result, type: :model do
   it "checks performance of the model" do
@@ -11,23 +12,31 @@ RSpec.describe Result, type: :model do
     db_result = ActiveSupport::JSON.decode(res.out)
     expect(db_result).to eq(result)
   end
-# it "checks performance of the model for undubling" do
-#    res = Result.find_by(in: 6)
-#    res&.destroy
-#    result = [6,'110','011',3]
-#    result2 = [8,'1000','0001',1]
-#    local_res = Result.create in: 6, out: ActiveSupport::JSON.encode(result)
-#    local_res.save
-#    expect {
-#      local_res = Result.create in: 6, out: ActiveSupport::JSON.encode(result2)
-#      local_res.save
-#    }.to raise_error(ActiveRecord::RecordNotUnique)
-#  end
-context 'when in is unique' do
-  res = Result.find_by(in: 6)
-  res&.destroy
-    before { Result.create!(in: 6, out: ActiveSupport::JSON.encode([6, '110', '011', 3])) }
-  it {expect(subject).to be_valid}
-end
+  context 'when in is unique' do
+     res = Result.find_by(in: 6)
+     res&.destroy
+       before { res = Result.create!(in: 6, out: ActiveSupport::JSON.encode([6, '110', '011', 3])) }
+     it {expect(res).to be_valid}
+   end
 
+  context 'validations' do
+    res = Result.find_by(in: 6)
+    res&.destroy
+      before { Result.create!(in: 6, out: ActiveSupport::JSON.encode([6, '110', '011', 3])) }
+    it do 
+      should validate_uniqueness_of(:in)
+    end
+    end
+  
+  context 'non-negative' do
+    res = Result.find_by(in: -6)
+    res&.destroy
+    it do
+      expect { 
+        Result.create!(in: -6, out: ActiveSupport::JSON.encode([6, '110', '011', 3]))
+      }.to raise_error(
+        ActiveRecord::RecordInvalid
+      )
+    end
+    end
 end

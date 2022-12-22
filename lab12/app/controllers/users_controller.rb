@@ -22,7 +22,7 @@ class UsersController < ApplicationController
 
   def xml
     users = User.all.map do |user|
-      { username: user.username, email: user.email, password: user.password }
+      { username: user.username, email: user.email, password_digest: user.password_digest }
     end
     render xml: users
   end
